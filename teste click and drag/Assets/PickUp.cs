@@ -1,8 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class drag : MonoBehaviour {
-	//float distance = 10;
+public class PickUp : MonoBehaviour {
+
     float throwForce = 600;
     Vector3 objectPos;
     float distance;
@@ -15,13 +16,13 @@ public class drag : MonoBehaviour {
     void Update()
     {
         //check isHolding
-        if(isHolding==true)
+        if (isHolding == true)
         {
             item.GetComponent<Rigidbody>().velocity = Vector3.zero;
             item.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             item.transform.SetParent(tempParent.transform);
 
-            if(Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1))
             {
                 //throw
             }
@@ -46,10 +47,4 @@ public class drag : MonoBehaviour {
     {
         isHolding = false;
     }
-
-    //void OnMouseDrag(){
-    //	Vector3 mousePosition = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, distance);
-    //	Vector3 objPosition = Camera.main.ScreenToWorldPoint (mousePosition);
-    //	transform.position = objPosition;
-    //}
 }
