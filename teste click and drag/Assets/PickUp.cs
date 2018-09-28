@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour {
 
-    float throwForce;
+    public float throwForce;
     Vector3 objectPos;
     float distance;
 
@@ -53,8 +53,8 @@ public class PickUp : MonoBehaviour {
 
             if (Input.GetButtonDown("Fire2"))
             {
-                item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce);
                 isHolding = false;
+                item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce);
             }
             else
             {

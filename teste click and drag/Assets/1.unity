@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd85eb693f51dd49ae5d7ab1bcc8ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  throwForce: 1200
   canHold: 1
   item: {fileID: 126048837}
   tempParent: {fileID: 1699118316}
