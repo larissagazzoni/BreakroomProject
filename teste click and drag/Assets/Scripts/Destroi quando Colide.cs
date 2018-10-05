@@ -8,7 +8,9 @@ public class DestroiquandoColide : MonoBehaviour {
 
 	void OnCollisionEnter()
 	{
-		GameObject.Instantiate (replacement, transform.position, transform.rotation);	
+		GameObject.Instantiate (replacement, transform.position, transform.rotation);
+
+		Destroy (gameObject);
 	}
 
 }

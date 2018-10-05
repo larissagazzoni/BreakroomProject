@@ -12,6 +12,7 @@ public class PickUp : MonoBehaviour {
     public GameObject item;
     public GameObject tempParent;
     public bool isHolding = false;
+	public bool isBreakable = false;
 
     private Vector3 screenPoint;
     private Vector3 offset;
@@ -82,6 +83,9 @@ public class PickUp : MonoBehaviour {
 
     private void OnMouseUp()
     {
+		if (isBreakable) {
+			item.GetComponent<Teste> ().canBreak = true;
+		}
         isHolding = false;
     }
 
