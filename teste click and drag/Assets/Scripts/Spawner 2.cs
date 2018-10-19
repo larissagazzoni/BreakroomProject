@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner 2 : MonoBehaviour {
+public class Spawner2 : MonoBehaviour {
 
 public Transform spawnPos;
 public GameObject spawnee;
@@ -12,7 +12,7 @@ public GameObject spawnee;
 	void Update () {
     if (Input.GetMouseButton(0))
     {
-        Instantiate(spawnee, spawnPos.Position, spawnPos.Rotation);
+        Instantiate(spawnee, spawnPos.position, spawnPos.rotation);
     }
 	}
 }

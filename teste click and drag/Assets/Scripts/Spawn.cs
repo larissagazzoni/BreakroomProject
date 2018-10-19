@@ -13,7 +13,7 @@ public class Spawn : MonoBehaviour {
 
     private void Update()
     {
-        if (ShouldSpwan ())
+        if (ShouldSpawn ())
         {
             Spawning();
         }
