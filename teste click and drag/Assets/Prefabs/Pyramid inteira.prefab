@@ -22,11 +22,12 @@ GameObject:
   - component: {fileID: 33779865047844102}
   - component: {fileID: 23972090358625862}
   - component: {fileID: 64906773165876850}
-  - component: {fileID: 114564628118527734}
   - component: {fileID: 54275881922010176}
+  - component: {fileID: 114602618691391410}
+  - component: {fileID: 114004421780669866}
   m_Layer: 0
   m_Name: Pyramid inteira
-  m_TagString: Untagged
+  m_TagString: Objetos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1203346068373220}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 12.729765, y: 1.5999995, z: -2.0047154}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 16.344366, y: 2, z: -22.532997}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &23972090358625862
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +116,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ddaebfde655f2a246a3a22404c633824, type: 3}
---- !u!114 &114564628118527734
+--- !u!114 &114004421780669866
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +124,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203346068373220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d627f67f624e17449660abe9f97349e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bd85eb693f51dd49ae5d7ab1bcc8ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedVersion: {fileID: 0}
+  throwForce: 1200
+  canHold: 1
+  item: {fileID: 1203346068373220}
+  tempParent: {fileID: 0}
+  isHolding: 0
+  isBreakable: 1
+--- !u!114 &114602618691391410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203346068373220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4bd308dec638e54c8bc463289ca9a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replacement: {fileID: 0}
+  canBreak: 0
