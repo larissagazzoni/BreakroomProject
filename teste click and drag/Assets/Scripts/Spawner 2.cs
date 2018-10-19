@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner2 : MonoBehaviour {
+public class Spawner 2 : MonoBehaviour {
 
 public Transform spawnPos;
 public GameObject spawnee;
