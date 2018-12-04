@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class SpawnObject : MonoBehaviour {
 
-    public Vector3 spawnCuboPos;
-    //public GameObject spawnee;
+    public Vector3 spawnPos;
 
 	public void spawnaCuboObject(GameObject brokenObject){
         
-        StartCoroutine(spawnWait(brokenObject, spawnCuboPos));
+        StartCoroutine(spawnWait(brokenObject, "Cubos"));
 
     }
 
-    IEnumerator spawnWait(GameObject brokenObject, Vector3 spawnPos){
+    IEnumerator spawnWait(GameObject brokenObject, string parentName){
 
         yield return new WaitForSeconds(1f);
-		//brokenObject.transform.position = spawnPos;
-		GameObject go = GameObject.Instantiate(brokenObject);
 
-		go.GetComponent<Quebraquadrado>().CuboQuebrado.SetActive(false);
-		go.GetComponent<Quebraquadrado>().CuboInteiro.SetActive(true);
-        //GameObject.Instantiate(brokenObject, spawnPos);
+        GameObject item = GameObject.Instantiate(brokenObject, spawnPos, brokenObject.transform.rotation, GameObject.Find(parentName).transform);
+
+        item.SetActive(true);
+
+        Destroy(brokenObject);
     }
 }

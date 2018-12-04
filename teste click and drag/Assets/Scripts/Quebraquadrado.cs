@@ -18,10 +18,9 @@ public class Quebraquadrado : MonoBehaviour {
 		
 		if (col.gameObject.tag == "Objetos"){
 			CuboQuebrado.transform.position = CuboInteiro.transform.position;
-			CuboQuebrado.SetActive(true);
+            scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject);
+            CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
-
-			scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject);
 		}
 	}
 }
