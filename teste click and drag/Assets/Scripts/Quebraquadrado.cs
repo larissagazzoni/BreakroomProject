@@ -19,6 +19,9 @@ public class Quebraquadrado : MonoBehaviour {
 			CuboQuebrado.transform.position = CuboInteiro.transform.position;
 			CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
+
+			FindObjectOfType<AudioGerente>().Play("Madeira 1"); 
+
 		}
 	}
 }
