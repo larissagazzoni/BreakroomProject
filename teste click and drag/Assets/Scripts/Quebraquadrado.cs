@@ -7,7 +7,7 @@ public class Quebraquadrado : MonoBehaviour {
 	public GameObject CuboQuebrado;
 	public GameObject CuboInteiro;
 
-	public GameObject scriptObject;
+	public GameObject scriptObject; // e isso aqui
 
 	void Start () {
 		CuboQuebrado.SetActive(false);
@@ -18,7 +18,9 @@ public class Quebraquadrado : MonoBehaviour {
 		
 		if (col.gameObject.tag == "Objetos"){
 			CuboQuebrado.transform.position = CuboInteiro.transform.position;
-            scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject);
+
+            scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject); // isso aqui
+
             CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
 		}

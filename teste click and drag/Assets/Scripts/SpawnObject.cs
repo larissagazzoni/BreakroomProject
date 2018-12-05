@@ -12,6 +12,12 @@ public class SpawnObject : MonoBehaviour {
 
     }
 
+    // cria uma função pra cada bichinho que for quebrar com seu relativo pai
+    public void spawnaVasoObject(GameObject brokenObject)
+    {
+        StartCoroutine(spawnWait(brokenObject, "Vasos"));
+    }
+
     IEnumerator spawnWait(GameObject brokenObject, string parentName){
 
         yield return new WaitForSeconds(1f);
