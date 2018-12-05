@@ -7,7 +7,7 @@ public class Quebraquadrado : MonoBehaviour {
 	public GameObject CuboQuebrado;
 	public GameObject CuboInteiro;
 
-
+	public GameObject scriptObject; // e isso aqui
 
 	void Start () {
 		CuboQuebrado.SetActive(false);
@@ -15,9 +15,13 @@ public class Quebraquadrado : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col){
+		
 		if (col.gameObject.tag == "Objetos"){
 			CuboQuebrado.transform.position = CuboInteiro.transform.position;
-			CuboQuebrado.SetActive(true);
+
+            scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject); // isso aqui
+
+            CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
 
 			FindObjectOfType<AudioGerente>().Play("Madeira 1"); 

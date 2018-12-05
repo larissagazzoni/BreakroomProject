@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Spawner2 : MonoBehaviour {
 
-public Transform spawnPos;
-public GameObject spawnee;
+    public Transform spawnPos;
+    //public GameObject spawnee;
 
-	
-	// Update is called once per frame
-	void Update () {
-    if (Input.GetMouseButton(0))
-    {
-        Instantiate(spawnee, spawnPos.position, spawnPos.rotation);
+	public void spawnaObject(GameObject brokenObject){
+        
+        StartCoroutine(spawnWait(brokenObject));
+
     }
-	}
+
+    IEnumerator spawnWait(GameObject brokenObject){
+
+        yield return new WaitForSeconds(1f);
+        GameObject.Instantiate(brokenObject, spawnPos.position, spawnPos.rotation);
+    }
 }

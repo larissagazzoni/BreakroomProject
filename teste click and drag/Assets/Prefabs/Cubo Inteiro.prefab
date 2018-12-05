@@ -22,11 +22,13 @@ GameObject:
   - component: {fileID: 33819975626751662}
   - component: {fileID: 23179019972735400}
   - component: {fileID: 54853869461725724}
-  - component: {fileID: 114155040656078824}
   - component: {fileID: 64570398953429648}
+  - component: {fileID: 114068147257523964}
+  - component: {fileID: 114167012835212988}
+  - component: {fileID: 114262493151977880}
   m_Layer: 0
   m_Name: Cubo Inteiro
-  m_TagString: Untagged
+  m_TagString: Objetos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,9 +39,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1605126962171572}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -5.7687016, y: 2.9, z: 0.76418877}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -39.64, y: -13.48, z: 40.03}
+  m_LocalScale: {x: 100, y: 99.99994, z: 99.99994}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,7 +117,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bd5f02b0c79d6f848879eb419e63ee27, type: 3}
---- !u!114 &114155040656078824
+--- !u!114 &114068147257523964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +125,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1605126962171572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d627f67f624e17449660abe9f97349e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe278a44086d14a05bb89a071271de92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedVersion: {fileID: 0}
+  spawnCuboPos: {x: 0, y: 0, z: 0}
+--- !u!114 &114167012835212988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1605126962171572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c2f6f01df9ea4c8be01af8dba8e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 1200
+  canHold: 1
+  item: {fileID: 1605126962171572}
+  tempParent: {fileID: 0}
+  isHolding: 0
+--- !u!114 &114262493151977880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1605126962171572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33893ff48d88b7142b63629ba65a3c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuboQuebrado: {fileID: 0}
+  CuboInteiro: {fileID: 1605126962171572}
+  scriptObject: {fileID: 0}
