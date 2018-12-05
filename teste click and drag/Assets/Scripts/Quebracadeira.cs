@@ -7,8 +7,6 @@ public class Quebracadeira : MonoBehaviour {
 	public GameObject CadeiraInteira;
 	public GameObject CadeiraQuebrada;
 
-
-
 	void Start () {
 		CadeiraQuebrada.SetActive(false);
 		CadeiraInteira.SetActive(true);
