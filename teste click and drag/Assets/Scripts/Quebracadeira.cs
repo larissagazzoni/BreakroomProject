@@ -13,7 +13,9 @@ public class Quebracadeira : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col){
-		if (col.gameObject.tag == "Objetos"){
+
+        if (col.gameObject.tag == "Objetos" || col.gameObject.tag == "Untagged")
+        {
 			CadeiraQuebrada.transform.position = CadeiraInteira.transform.position;
 			CadeiraQuebrada.SetActive(true);
 			CadeiraInteira.SetActive(false);

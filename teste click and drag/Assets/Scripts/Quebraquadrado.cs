@@ -9,17 +9,17 @@ public class Quebraquadrado : MonoBehaviour {
 
 	public GameObject scriptObject; // e isso aqui
 
-	void Start () {
+	/*void Start () {
 		CuboQuebrado.SetActive(false);
 		CuboInteiro.SetActive(true);
-	}
+	}*/
 
-	void OnCollisionEnter (Collision col){
+	/*void OnCollisionEnter (Collision col){
 		
 		if (col.gameObject.tag == "Objetos"){
 			CuboQuebrado.transform.position = CuboInteiro.transform.position;
 
-            scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject); // isso aqui
+           // scriptObject.GetComponent<SpawnObject>().spawnaCuboObject(this.gameObject); // isso aqui
 
             CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
@@ -27,5 +27,5 @@ public class Quebraquadrado : MonoBehaviour {
 			FindObjectOfType<AudioGerente>().Play("Madeira 1"); 
 
 		}
-	}
+	}*/
 }

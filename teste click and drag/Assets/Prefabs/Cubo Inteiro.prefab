@@ -23,12 +23,11 @@ GameObject:
   - component: {fileID: 23179019972735400}
   - component: {fileID: 54853869461725724}
   - component: {fileID: 64570398953429648}
-  - component: {fileID: 114068147257523964}
   - component: {fileID: 114167012835212988}
-  - component: {fileID: 114262493151977880}
+  - component: {fileID: 114420656203433382}
   m_Layer: 0
   m_Name: Cubo Inteiro
-  m_TagString: Objetos
+  m_TagString: Cubo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1605126962171572}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -39.64, y: -13.48, z: 40.03}
-  m_LocalScale: {x: 100, y: 99.99994, z: 99.99994}
+  m_LocalScale: {x: 100, y: 99.999695, z: 99.999695}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,18 +116,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bd5f02b0c79d6f848879eb419e63ee27, type: 3}
---- !u!114 &114068147257523964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605126962171572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe278a44086d14a05bb89a071271de92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnCuboPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114167012835212988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +132,7 @@ MonoBehaviour:
   item: {fileID: 1605126962171572}
   tempParent: {fileID: 0}
   isHolding: 0
---- !u!114 &114262493151977880
+--- !u!114 &114420656203433382
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,9 +140,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1605126962171572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33893ff48d88b7142b63629ba65a3c22, type: 3}
+  m_Script: {fileID: 11500000, guid: 99b0c0bfc99dba747b709f0ff085b27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CuboQuebrado: {fileID: 0}
-  CuboInteiro: {fileID: 1605126962171572}
-  scriptObject: {fileID: 0}
+  ObjetoQuebrado: {fileID: 1934574876332510, guid: 6215ccb8b4102e247afe652efb533699,
+    type: 2}
+  ObjetoInteiro: {fileID: 1605126962171572}

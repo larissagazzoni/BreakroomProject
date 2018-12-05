@@ -8,14 +8,14 @@ public class Quebra01 : MonoBehaviour {
 	public GameObject CuboInteiro;
 
 	void Start () {
-		CuboQuebrado.SetActive(false);
-		CuboInteiro.SetActive(true);
+		//CuboQuebrado.SetActive(false);
+		//CuboInteiro.SetActive(true);
 	}
 
-	void OnCollisionEnter (Collision col){
+	/*void OnCollisionEnter (Collision col){
 		if (col.gameObject.tag == "Objetos"){
 			CuboQuebrado.SetActive(true);
 			CuboInteiro.SetActive(false);
 		}
-	}
+	}*/
 }

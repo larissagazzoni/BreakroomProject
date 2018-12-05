@@ -49,8 +49,6 @@ public class Joga01 : MonoBehaviour {
         {
             item.GetComponent<Rigidbody>().velocity = Vector3.zero;
             item.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            item.transform.SetParent(tempParent.transform);
-
             if (Input.GetButtonDown("Fire2"))
             {
                 isHolding = false;
@@ -59,7 +57,6 @@ public class Joga01 : MonoBehaviour {
             else
             {
                 objectPos = item.transform.position;
-                item.transform.SetParent(null);
                 item.GetComponent<Rigidbody>().useGravity = true;
                 item.transform.position = objectPos;
             }

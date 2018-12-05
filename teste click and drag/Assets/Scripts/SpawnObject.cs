@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class SpawnObject : MonoBehaviour {
 
-    public Vector3 spawnPos;
+    public Vector3 SpawnPosition;
+    public float SpawnWaitSeconds;
 
-	public void spawnaCuboObject(GameObject brokenObject){
+    public void spawnaObject(GameObject newObject, Transform parent, Quaternion rotation){
         
-        StartCoroutine(spawnWait(brokenObject, "Cubos"));
+        StartCoroutine(RespawnObject(newObject, parent, rotation));
 
     }
 
-    // cria uma função pra cada bichinho que for quebrar com seu relativo pai
-    public void spawnaVasoObject(GameObject brokenObject)
+    IEnumerator RespawnObject(GameObject newObject, Transform parent, Quaternion rotation)
     {
-        StartCoroutine(spawnWait(brokenObject, "Vasos"));
+        GameObject respawnObject = Instantiate(newObject, SpawnPosition, rotation, parent.transform);
+        respawnObject.SetActive(false);
+
+        yield return new WaitForSeconds(SpawnWaitSeconds);
+
+        respawnObject.SetActive(true);
+
     }
 
-    IEnumerator spawnWait(GameObject brokenObject, string parentName){
-
-        yield return new WaitForSeconds(1f);
-
-        GameObject item = GameObject.Instantiate(brokenObject, spawnPos, brokenObject.transform.rotation, GameObject.Find(parentName).transform);
-
-        item.SetActive(true);
-
-        Destroy(brokenObject);
-    }
 }
