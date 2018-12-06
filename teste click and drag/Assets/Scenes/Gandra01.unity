@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1311,7 +1311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1 &457855725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100074, guid: c7e08ee6babd68d4db86ce94041e6aad,
@@ -2529,6 +2529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CuboQuebrado: {fileID: 654650046}
   CuboInteiro: {fileID: 698954497}
+  scriptObject: {fileID: 0}
 --- !u!114 &698954500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2901,7 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1 &847764822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100070, guid: c7e08ee6babd68d4db86ce94041e6aad,
@@ -3178,7 +3179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1001 &959005088
 Prefab:
   m_ObjectHideFlags: 0
@@ -3318,7 +3319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1 &1058500753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100084, guid: c7e08ee6babd68d4db86ce94041e6aad,
@@ -3529,6 +3530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CuboQuebrado: {fileID: 654650046}
   CuboInteiro: {fileID: 1130221381}
+  scriptObject: {fileID: 0}
 --- !u!1 &1266809647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5e40bd74f55ec5f4e965161fd2045e9d,
@@ -4151,7 +4153,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f633bcb3e66becf49acc5be2ac8693f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4448,11 +4450,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1157008645025046, guid: 3bb373b63c2093a468537fef519963cd,
     type: 2}
   m_PrefabInternal: {fileID: 386032928}
---- !u!1 &1722013652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1750761483304180, guid: 3bb373b63c2093a468537fef519963cd,
-    type: 2}
-  m_PrefabInternal: {fileID: 386032928}
 --- !u!1 &1724973392 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100032, guid: c7e08ee6babd68d4db86ce94041e6aad,
@@ -4640,7 +4637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1 &1794970631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5347,7 +5344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CadeiraInteira: {fileID: 1662906114}
-  CadeiraQuebrada: {fileID: 1722013652}
+  CadeiraQuebrada: {fileID: 0}
 --- !u!1 &2103833739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: c7e08ee6babd68d4db86ce94041e6aad,
